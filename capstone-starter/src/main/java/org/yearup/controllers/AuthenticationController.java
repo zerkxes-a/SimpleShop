@@ -2,6 +2,7 @@ package org.yearup.controllers;
 
 import javax.validation.Valid;
 
+import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -78,6 +79,9 @@ public class AuthenticationController {
                 throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "User Already Exists.");
             }
 
+            if (newUser.getUsername() == null || newUser.getPassword() == null || newUser.getRole() == null) {
+                throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "Missing required fields.");
+            }
             // create user
             User user = userDao.create(new User(0, newUser.getUsername(), newUser.getPassword(), newUser.getRole()));
 
@@ -88,8 +92,15 @@ public class AuthenticationController {
 
             return new ResponseEntity<>(user, HttpStatus.CREATED);
         }
-        catch (Exception e)
-        {
+        catch (DataIntegrityViolationException e) {
+            // Likely a DB constraint error, e.g., duplicate key
+            throw new ResponseStatusException(HttpStatus.CONFLICT, "User already exists.");
+        }
+        catch (ResponseStatusException e) {
+            // Rethrow known errors
+            throw e;
+        }
+        catch (Exception e) {
             throw new ResponseStatusException(HttpStatus.INTERNAL_SERVER_ERROR, "Oops... our bad.");
         }
     }
