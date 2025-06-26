@@ -14,5 +14,5 @@ public interface ShoppingCartDao
     ShoppingCart delete(int userId);
 
     Object getById(int id);
-    // add additional method signatures here
+
 }

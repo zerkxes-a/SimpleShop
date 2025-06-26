@@ -31,15 +31,14 @@ public class CategoriesController
     }
 
 
-    // add the appropriate annotation for a get action
+
     @GetMapping("")
     @PreAuthorize("permitAll()")
     public List<Category> getAll()
-    {// find and return all categories TODO THINK DONE?
+    {
         return categoryDao.getAllCategories();
     }
 
-    // add the appropriate annotation for a get action
     @GetMapping("{id}")
     @PreAuthorize("permitAll()")
     public Category getById(@PathVariable int id)
@@ -85,12 +84,10 @@ public class CategoriesController
         {
             throw new ResponseStatusException(HttpStatus.INTERNAL_SERVER_ERROR, "Oops... our bad.");
         }
-        // update the category by id
     }
 
 
-    // add annotation to call this method for a DELETE action - the url path must include the categoryId
-    // add annotation to ensure that only an ADMIN can call this function
+
     @DeleteMapping("")
     @PreAuthorize("hasRole('ROLE_ADMIN')")
     public Category deleteCategory(@PathVariable int id)
