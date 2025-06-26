@@ -39,7 +39,7 @@ public class MySqlCategoryDao extends MySqlDaoBase implements CategoryDao
                                 rows.getString(3)
                         )
                 );
-            }categories.clear();
+            }
         } catch (SQLException e) {
             e.printStackTrace();
         }
