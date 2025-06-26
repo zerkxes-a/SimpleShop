@@ -27,13 +27,12 @@ public class ShoppingCartController
     private ProductDao productDao;
 
     @Autowired
-public ShoppingCartController(ShoppingCartDao shoppingCartDao, UserDao userDao, ProductDao productDao) {
+    public ShoppingCartController(ShoppingCartDao shoppingCartDao, UserDao userDao, ProductDao productDao) {
         this.shoppingCartDao = shoppingCartDao;
         this.userDao = userDao;
         this.productDao = productDao;
     }
 
-    // each method in this controller requires a Principal object as a parameter
     @GetMapping()
     public ShoppingCart getCart(Principal principal)
     {
@@ -59,13 +58,9 @@ public ShoppingCartController(ShoppingCartDao shoppingCartDao, UserDao userDao, 
     {
         try
         {
-            System.out.println(id);
             String userName = principal.getName();
-            System.out.println(userName);
             User user = userDao.getByUserName(userName);
-            System.out.println(user);
             int userId = user.getId();
-            System.out.println(userId);
             return shoppingCartDao.create(id, userId);
         }
         catch(Exception e)
@@ -75,15 +70,18 @@ public ShoppingCartController(ShoppingCartDao shoppingCartDao, UserDao userDao, 
     }
 
     @PutMapping("products/{id}")
-    public void updateCart(@PathVariable int id, Principal principal)
+    public ShoppingCart updateCart(@PathVariable int id, Principal principal)
     {
+        // add a PUT method to update an existing product in the cart - the url should be
+        // https://localhost:8080/cart/products/15 (15 is the productId to be updated)
+        // the BODY should be a ShoppingCartItem - quantity is the only value that will be updated
         try
         {
             String userName = principal.getName();
             User user = userDao.getByUserName(userName);
             int userId = user.getId();
 
-            shoppingCartDao.update(id, userId);
+            return shoppingCartDao.update(id, userId);
         }
         catch(Exception ex)
         {
@@ -91,34 +89,21 @@ public ShoppingCartController(ShoppingCartDao shoppingCartDao, UserDao userDao, 
         }
     }
 
-    @DeleteMapping("")
-    public void deleteCart(@PathVariable int id, Principal principal)
+    @DeleteMapping()
+    public ShoppingCart deleteCart(Principal principal)
     {
         try
         {
             String userName = principal.getName();
             User user = userDao.getByUserName(userName);
             int userId = user.getId();
-            var product = shoppingCartDao.getById(id);
 
-            if(product == null)
-                throw new ResponseStatusException(HttpStatus.NOT_FOUND);
-
-            shoppingCartDao.delete(id, userId);
+            return shoppingCartDao.delete(userId);
         }
         catch(Exception ex)
         {
             throw new ResponseStatusException(HttpStatus.INTERNAL_SERVER_ERROR, "Oops... our bad.");
         }
     }
-
-
-    // add a PUT method to update an existing product in the cart - the url should be
-    // https://localhost:8080/cart/products/15 (15 is the productId to be updated)
-    // the BODY should be a ShoppingCartItem - quantity is the only value that will be updated
-
-
-    // add a DELETE method to clear all products from the current users cart
-    // https://localhost:8080/cart
 
 }

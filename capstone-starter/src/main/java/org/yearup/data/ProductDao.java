@@ -11,7 +11,7 @@ public interface ProductDao
     List<Product> listByCategoryId(int categoryId);
     Product getById(int productId);
     Product create(Product product);
-    void update(int productId, Product product);
-    void delete(int productId);
+    Product update(int productId, Product product);
+    Product delete(int productId);
 
 }

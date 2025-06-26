@@ -25,7 +25,6 @@ public class MySqlShoppingCartDao extends MySqlDaoBase implements ShoppingCartDa
 
     @Override
     public ShoppingCart getCartByUserId(int userId) {
-        //tODO STOP HAVING A STROKE ON INTELLIJ whops stroked all over the place
         String sql = "SELECT * FROM products AS p JOIN shopping_cart as sc ON sc.product_id = p.product_id WHERE sc.user_id = ?";
 
         try (Connection connection = getConnection()) {
@@ -49,7 +48,6 @@ public class MySqlShoppingCartDao extends MySqlDaoBase implements ShoppingCartDa
     }
 
     @Override
-    //TODO TEST THIS, WHY CONNECTION ERROR 500
     public ShoppingCart create(int productId, int userId) {
         try (Connection connection = getConnection()) {
             String checkSql = "INSERT INTO shopping_cart(user_id, product_id, quantity) VALUES(?,?,1) ON DUPLICATE KEY UPDATE quantity = quantity + 1";
@@ -71,14 +69,28 @@ public class MySqlShoppingCartDao extends MySqlDaoBase implements ShoppingCartDa
 
     //TODO THIS LAST, OPTIONAL IN OPTIONAL
     @Override
-    public void update(int id, int userId) {
+    public ShoppingCart update(int id, int userId) {
 
+        return null;
     }
 
-    //TODO THIS NEXT
+    //TODO STATEMENT WORKS IN SQL WHY CONNECT WEIRD IN POSTMAN AND NOT WORK ON WEBSITE
     @Override
-    public void delete(int id, int userId) {
+    public ShoppingCart delete(int userId){
 
+        try (Connection connection = getConnection()){
+        String sql = "DELETE FROM shopping_cart WHERE user_id = ?";
+            PreparedStatement statement = connection.prepareStatement(sql);
+            statement.setInt(1, userId);
+            statement.executeUpdate();
+
+            return getCartByUserId(userId);
+            //TODO DO I NEED RETURN HERE? QUERY TOPHER CONFUESD AS TO WHY STILL NOT SHOWING UP ON WEBPAGE
+        }
+        catch (SQLException e)
+        {
+            throw new RuntimeException(e);
+        }
     }
 
     @Override

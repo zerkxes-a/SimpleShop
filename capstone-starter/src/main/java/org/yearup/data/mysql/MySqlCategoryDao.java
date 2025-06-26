@@ -64,7 +64,6 @@ public class MySqlCategoryDao extends MySqlDaoBase implements CategoryDao
         catch (SQLException e){
             e.printStackTrace();
         }
-       // return categories;
 
         // get category by id
         return null;
@@ -102,7 +101,7 @@ public class MySqlCategoryDao extends MySqlDaoBase implements CategoryDao
     }
 
         @Override
-    public void update(int categoryId, Category category) {
+    public Category update(int categoryId, Category category) {
 
             {
                 String sql = "UPDATE categories" +
@@ -123,10 +122,11 @@ public class MySqlCategoryDao extends MySqlDaoBase implements CategoryDao
                 }
                 // update category
             }
+            return category;
         }
 
     @Override
-    public void delete(int categoryId) {
+    public Category delete(int categoryId) {
         String sql = "DELETE FROM categories " +
             " WHERE category_id = ?;";
 
@@ -141,6 +141,7 @@ public class MySqlCategoryDao extends MySqlDaoBase implements CategoryDao
         {
             throw new RuntimeException(e);
         }
+        return null;
     }
 
     private Category mapRow(ResultSet row) throws SQLException

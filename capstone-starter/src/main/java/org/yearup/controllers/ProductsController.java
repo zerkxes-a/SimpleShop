@@ -81,11 +81,11 @@ public class ProductsController
 
     @PutMapping("{id}")
     @PreAuthorize("hasRole('ROLE_ADMIN')")
-    public void updateProduct(@PathVariable int id, @RequestBody Product product)
+    public Product updateProduct(@PathVariable int id, @RequestBody Product product)
     {
         try
         {
-            productDao.update(id, product);
+            return productDao.update(id, product);
         }
         catch(Exception ex)
         {
@@ -95,7 +95,7 @@ public class ProductsController
 
     @DeleteMapping("{id}")
     @PreAuthorize("hasRole('ROLE_ADMIN')")
-    public void deleteProduct(@PathVariable int id)
+    public Product deleteProduct(@PathVariable int id)
     {
         try
         {
@@ -104,7 +104,7 @@ public class ProductsController
             if(product == null)
                 throw new ResponseStatusException(HttpStatus.NOT_FOUND);
 
-            productDao.delete(id);
+            return productDao.delete(id);
         }
         catch(Exception ex)
         {

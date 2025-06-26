@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a5f64690-ec45-450a-b740-7be5554663f0" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/css/lib/bootstrap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/lib/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/main.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/products/apron.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/products/bakeware-set.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/products/blender.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/products/camera.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/products/canister-set.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/products/casserole-dish.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/products/coffee-maker.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/products/cookware-set.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/products/cutting-board-set.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/products/dining-set.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/products/dish-rack.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/products/drone.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/products/earbuds.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/products/electric-kettle.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/products/electric-mixer.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/products/external-hard-drive.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/products/fitness-tracker.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/products/food-processor.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/products/food-storage-containers.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/products/gaming-console.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/products/gaming-keyboard.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/products/glassware-set.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/products/headphones.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/products/ice-cream-maker.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/products/kitchen-scale.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/products/kitchen-timer.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/products/knife-set.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/products/laptop.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/products/measuring-cups.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/products/mens-belt.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/products/mens-dress-pants.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/products/mens-dress-shirt.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/products/mens-dress-shoes.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/products/mens-hat.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/products/mens-hoodie.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/products/mens-jacket.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/products/mens-jeans.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/products/mens-polo-shirt.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/products/mens-shorts.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/products/mens-sneakers.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/products/mens-socks.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/products/mens-suit.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/products/mens-sweater.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/products/mens-tie.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/products/mens-tshirt.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/products/mens-watch.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/products/mens-winter-coat.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/products/microwave-oven.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/products/mixing-bowls.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/products/no-image.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/products/photos.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/products/printer.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/products/serving-tray.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/products/slow-cooker.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/products/smart-tv.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/products/smartphone.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/products/smartwatch.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/products/speaker.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/products/spice-rack.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/products/tablet.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/products/tea-kettle.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/products/toaster.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/products/utensil-set.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/products/vr-headset.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/products/wine-glasses.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/products/wireless-mouse.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/products/wireless-router.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/products/womens-activewear.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/products/womens-blazer.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/products/womens-blouse.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/products/womens-dress.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/products/womens-gown.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/products/womens-hat.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/products/womens-jeans.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/products/womens-scarf.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/products/womens-shoes.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/products/womens-shorts.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/products/womens-skirt.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/products/womens-socks.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/products/womens-sweater.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/products/womens-tshirt.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/products/womens-winter-coat.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/application.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/filter.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/axios.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/jquery.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/lib/mustache.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/services/categories-service.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/services/products-service.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/services/profile-service.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/services/shoppingcart-service.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/services/user-service.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/template-builder.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/cart.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/error.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/filter.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/header.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/home.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/image-detail.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/login-form.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/message.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/product.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/profile.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/user.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../capstone-starter/src/main/java/org/yearup/controllers/ShoppingCartController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../capstone-starter/src/main/java/org/yearup/controllers/ShoppingCartController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../capstone-starter/src/main/java/org/yearup/data/mysql/MySqlCategoryDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../capstone-starter/src/main/java/org/yearup/data/mysql/MySqlCategoryDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../capstone-starter/src/main/java/org/yearup/data/mysql/MySqlShoppingCartDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../capstone-starter/src/main/java/org/yearup/data/mysql/MySqlShoppingCartDao.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 2
+}]]></component>
+  <component name="ProjectId" id="2yvDOKsrVwrASbD8dvlsjsG44uT" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Student/pluralsight/workshops/SimpleShop/capstone-client-web-application"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a5f64690-ec45-450a-b740-7be5554663f0" name="Changes" comment="" />
+      <created>1750706119444</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1750706119444</updated>
+    </task>
+    <servers />
+  </component>
+</project>

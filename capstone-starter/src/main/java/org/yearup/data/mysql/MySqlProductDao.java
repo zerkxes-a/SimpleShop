@@ -157,7 +157,7 @@ public class MySqlProductDao extends MySqlDaoBase implements ProductDao
     }
 
     @Override
-    public void update(int productId, Product product)
+    public Product update(int productId, Product product)
     {
         String sql = "UPDATE products" +
                 " SET name = ? " +
@@ -189,10 +189,11 @@ public class MySqlProductDao extends MySqlDaoBase implements ProductDao
         {
             throw new RuntimeException(e);
         }
+        return product;
     }
 
     @Override
-    public void delete(int productId)
+    public Product delete(int productId)
     {
 
         String sql = "DELETE FROM products " +
@@ -209,6 +210,7 @@ public class MySqlProductDao extends MySqlDaoBase implements ProductDao
         {
             throw new RuntimeException(e);
         }
+        return null;
     }
 
     protected static Product mapRow(ResultSet row) throws SQLException
