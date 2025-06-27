@@ -94,9 +94,9 @@ public class CategoriesController
     {
         try
         {
-            var product = categoryDao.getById(id);
+            var category = categoryDao.getById(id);
 
-            if(product == null)
+            if(category == null)
                 throw new ResponseStatusException(HttpStatus.NOT_FOUND);
 
             return categoryDao.delete(id);
